@@ -1,1 +1,60 @@
-something will be here later
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Colin Cole's home on the web.">
+    <title>Colin Cole — Home</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Colin Cole, home">
+        <span class="brand-mark" aria-hidden="true">CC</span>
+        <span>Colin Cole</span>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow">Colin Cole · Developer</p>
+        <h1 id="hero-title">Thoughtful work for the web.</h1>
+        <p class="hero-copy">
+          A simple home for the things I build, the ideas I explore, and the
+          people I meet along the way.
+        </p>
+        <div class="actions">
+          <a class="button button-primary" href="projects.html">View projects <span aria-hidden="true">→</span></a>
+          <a class="button button-secondary" href="contact.html">Get in touch</a>
+        </div>
+      </section>
+
+      <section class="featured" aria-labelledby="featured-title">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2 id="featured-title">Start with the latest.</h2>
+        </div>
+
+        <a class="project-card" href="projects.html">
+          <span class="project-number">01</span>
+          <span class="project-content">
+            <span class="project-name">This portfolio</span>
+            <span class="project-description">A fast, hand-built home for projects and contact information.</span>
+          </span>
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Colin Cole</p>
+      <p>Built with plain HTML &amp; CSS.</p>
+    </footer>
+  </body>
+</html>
