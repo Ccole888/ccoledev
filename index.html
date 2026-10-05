@@ -3,58 +3,147 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Colin Cole's home on the web.">
-    <title>Colin Cole — Home</title>
+    <meta name="description" content="Colin Cole — computer engineering student at UMBC, robotics builder, and platform engineering intern. Selected projects, experience, and contact.">
+    <meta name="theme-color" content="#141f33">
+    <title>Colin Cole — Computer Engineering</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Colin Cole, home">
-        <span class="brand-mark" aria-hidden="true">CC</span>
-        <span>Colin Cole</span>
-      </a>
+  <body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
 
+    <header class="site-header wrap">
+      <a class="brand" href="#top" aria-label="Colin Cole, back to top">Colin Cole<span aria-hidden="true">.</span></a>
       <nav aria-label="Main navigation">
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a href="assets/ColinColeResume.pdf">Resume <span class="file-label">PDF</span></a>
       </nav>
     </header>
 
-    <main>
+    <main id="main" class="wrap" tabindex="-1">
       <section class="hero" aria-labelledby="hero-title">
-        <p class="eyebrow">Colin Cole · Developer · Earth</p>
-        <h1 id="hero-title">Building for the digital frontier.</h1>
-        <p class="hero-copy">
-          I make focused web experiences—designed with curiosity, clarity, and
-          plenty of room to explore.
-        </p>
-        <div class="actions">
-          <a class="button button-primary" href="projects.html">View projects <span aria-hidden="true">→</span></a>
-          <a class="button button-secondary" href="contact.html">Get in touch</a>
+        <p class="eyebrow">Computer engineering · UMBC</p>
+        <h1 id="hero-title">Colin Cole<span>.</span></h1>
+        <p class="hero-copy">I’m a computer engineering student at UMBC. I build robots, design circuits, and develop software tools.</p>
+        <div class="hero-links">
+          <a class="text-link" href="#work">Selected work <span aria-hidden="true">↓</span></a>
+          <a class="subtle-link" href="mailto:colincole888@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
         </div>
       </section>
 
-      <section class="featured" aria-labelledby="featured-title">
+      <section id="work" class="section" aria-labelledby="work-title">
         <div class="section-heading">
-          <p class="eyebrow">Mission log</p>
-          <h2 id="featured-title">Latest launch.</h2>
+          <h2 id="work-title">Selected work</h2>
+          <p>Vision, logic, and circuit design.</p>
         </div>
+        <div class="project-list">
+          <article class="project">
+            <span class="project-number" aria-hidden="true">01</span>
+            <div class="project-title">
+              <p class="eyebrow">Robotics &amp; perception</p>
+              <h3>Robotics Vision System</h3>
+            </div>
+            <div class="project-details">
+              <p>A TensorRT-accelerated vision system that detects AprilTags, obstacles, and game elements, then generates navigation paths using decision-tree logic.</p>
+              <ul class="tags" aria-label="Robotics Vision System technologies">
+                <li>TensorRT</li><li>Computer vision</li><li>Path planning</li>
+              </ul>
+            </div>
+          </article>
+          <article class="project">
+            <span class="project-number" aria-hidden="true">02</span>
+            <div class="project-title">
+              <p class="eyebrow">Digital logic</p>
+              <h3>4-Bit ALU</h3>
+            </div>
+            <div class="project-details">
+              <p>A 4-bit arithmetic logic unit supporting 16 operations through a 4-bit selection input. Designed and built with modular logic gates to emulate processor-level functionality.</p>
+              <ul class="tags" aria-label="4-Bit ALU technologies">
+                <li>Logic gates</li><li>16 operations</li><li>Processor design</li>
+              </ul>
+            </div>
+          </article>
+          <article class="project">
+            <span class="project-number" aria-hidden="true">03</span>
+            <div class="project-title">
+              <p class="eyebrow">Hardware &amp; communication</p>
+              <h3>RS-485 Multiplexer PCB</h3>
+            </div>
+            <div class="project-details">
+              <p>A PCB that connects eight I2C devices to a single RS-485 half-duplex connection. Designed, validated, and tested to save space and expand robot sensor capacity.</p>
+              <ul class="tags" aria-label="RS-485 Multiplexer PCB technologies">
+                <li>PCB design</li><li>I2C</li><li>RS-485</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
 
-        <a class="project-card" href="projects.html">
-          <span class="project-number">01</span>
-          <span class="project-content">
-            <span class="project-name">Personal site</span>
-            <span class="project-description">A fast, hand-built base for projects and contact information.</span>
-          </span>
-          <span class="project-arrow" aria-hidden="true">↗</span>
-        </a>
+      <section id="experience" class="section" aria-labelledby="experience-title">
+        <div class="section-heading">
+          <h2 id="experience-title">Experience</h2>
+          <p>Engineering in practice.</p>
+        </div>
+        <div class="experience-list">
+          <article class="experience-row">
+            <p class="date">Jun 2026 — Present</p>
+            <div>
+              <h3>Platform Engineering Intern</h3>
+              <p class="organization">Systems Planning &amp; Analysis <span>Alexandria, VA</span></p>
+              <p class="experience-copy">Building secure data migration scripts, Azure automation integrations, and internal tools. Supporting company-wide AI training with the Office of the CIO.</p>
+            </div>
+          </article>
+          <article class="experience-row">
+            <p class="date">Oct 2024 — Present</p>
+            <div>
+              <h3>Retriever Robotics Club President</h3>
+              <p class="organization">University of Maryland, Baltimore County</p>
+              <p class="experience-copy">Leading a multidisciplinary team building autonomous and teleoperated competition robots. Developing C++ control systems and machine learning navigation while directing fundraising, budgeting, and outreach.</p>
+            </div>
+          </article>
+          <article class="experience-row">
+            <p class="date">May 2023 — May 2024</p>
+            <div>
+              <h3>Software Engineering Intern</h3>
+              <p class="organization">Johns Hopkins Applied Physics Laboratory <span>Laurel, MD</span></p>
+              <p class="experience-copy">Modernized inventory infrastructure, built a CSV-to-MySQL ETL tool, and developed automated verification tests with Java, Cucumber, and Podman for NASA mission communications software.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="section about" aria-labelledby="about-title">
+        <div class="about-intro">
+          <h2 id="about-title">A little background</h2>
+          <p>I’m studying computer engineering at UMBC, with an expected graduation in May 2028. My work spans the code that runs a system and the hardware it runs on.</p>
+          <a class="text-link" href="assets/ColinColeResume.pdf" download>Download resume <span class="file-label">PDF</span> <span aria-hidden="true">↓</span></a>
+        </div>
+        <dl class="skills">
+          <div><dt>Programming</dt><dd>C++, C, Python, Java, MATLAB</dd></div>
+          <div><dt>Design &amp; testing</dt><dd>KiCad, NI Multisim, Logisim Evolution</dd></div>
+          <div><dt>Interfaces</dt><dd>CAN, SPI, Serial, I2C, RS-485</dd></div>
+          <div><dt>Tools</dt><dd>Git, GitHub, Bitbucket, Jira</dd></div>
+        </dl>
+      </section>
+
+      <section id="contact" class="section contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Let’s talk.</h2>
+          <p>For engineering opportunities, collaborations, or a hello.</p>
+        </div>
+        <div class="contact-links">
+          <a class="text-link email-link" href="mailto:colincole888@gmail.com">colincole888@gmail.com <span aria-hidden="true">↗</span></a>
+          <a class="subtle-link" href="https://github.com/ccole888">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
       </section>
     </main>
 
-    <footer>
+    <footer class="site-footer wrap">
       <p>© 2026 Colin Cole</p>
-      <p>Signal online · Built with plain HTML &amp; CSS.</p>
+      <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
     </footer>
   </body>
 </html>
